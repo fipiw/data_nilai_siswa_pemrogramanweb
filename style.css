@@ -1,0 +1,178 @@
+:root {
+    --bg-blue: #d1e9ff;
+    --card-cream: #fff9ed;
+    --accent-blue: #7fb5eb;
+    --text-dark: #2d3436;
+    --soft-red: #ff8a7a;
+    --soft-green: #95bd9d;
+}
+
+body {
+    background-color: var(--bg-blue);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+body.login-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-wrapper {    
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-left {
+    flex: 0 0 30%;
+    background-color: rgba(81, 145, 250, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    font-family: 'luckiest guy';
+    font-weight: bold;
+    height: 100vh;
+}
+
+.login-right {
+    flex: 0 0 70%; 
+    background-image: url('bg-login.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-login-submit {
+    background-color: var(--accent-blue);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logo-akademik {
+    width: 200px;
+    height: auto;
+    position: relative;
+    z-index: 10; 
+    display: block; 
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-login-submit:hover {
+    filter: brightness(90%); 
+    color: white;
+}
+
+.branding-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.branding-content h1 {
+    font-size: 2.8rem;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    background-color: #fff9ed; 
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+body.index-page, .tambah-page, .edit-page {
+    background-image: url('bg-index.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.card-aesthetic {
+    background-color: var(--card-cream);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.05);
+}
+
+.btn-masuk, .btn-tambah {
+    background-color: var(--accent-blue);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.btn-masuk:hover { background-color: #6da4db; color: white; }
+
+.form-control {
+    background-color: transparent;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+}
+
+.table-container {
+    border-radius: 15px;
+    overflow: hidden; 
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.table-custom {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+}
+
+.table-custom thead tr {
+    background-color: #d1e9ff !important; 
+}
+
+.table-custom thead th {
+    padding: 15px;
+    border: none;
+    color: #2d3436;
+    font-weight: bold;
+}
+
+.table-custom tbody tr {
+    background-color: #fff9ed !important;
+    border-top: 1px solid #f2ede0;
+}
+
+.table-custom tbody td {
+    padding: 12px 15px;
+    border: none;
+    vertical-align: middle;
+}
+
+.badge-nilai {
+    background-color: #b2e2f2;
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #2d3436;
+    display: inline-block;
+}
